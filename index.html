@@ -274,8 +274,8 @@ They we getting nervous when Darius said “yes!” <br><br> *** </p>
 <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
 <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
                     
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
+                    
+                        
                             
                          <!--   <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
@@ -284,51 +284,31 @@ They we getting nervous when Darius said “yes!” <br><br> *** </p>
                             </div>
                             -->
                             
-                            <!--
-                            
-                            <form method="POST" action="https://formspree.io/darius.susa@gmail.com">
-          
-        <!-- <input  type="text" name="name"> -->
-        
-        <input class="email-input" type="email" name="_replyto" placeholder="Your email">
-        
-        <input type="submit" value="Send">
-        
-        <!--<input placeholder="Enter Your Email" name="email" class="email-input">
-        
-        <button type="submit" class="button">Subscribe</button> -->
-</form> 
                             
                             
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Email</label>
+                                    
+                                    <form method="POST" name="sentMessage" action="https://formspree.io/darius.susa@gmail.com" id="contactForm">
+                                        
+                                        <div class="row control-group">
+                                            <div class="row control-group">
+                                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                
+                                                <label>Email</label>
                             
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email</label>
-                                <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
+            <input class="email-input" class="form-control" type="email" name="_replyto" placeholder="email" id="email">
+    
                             </div>
                         </div>
-                        <!-- <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div> 
-                        </div> -->
-                        <!--
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        -->
+                       
                         <br>
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
+                                
+                                 <input type="submit" value="Send">
                                 <button type="submit" class="btn btn-success btn-lg">Send</button>
                             </div>
                         </div>
